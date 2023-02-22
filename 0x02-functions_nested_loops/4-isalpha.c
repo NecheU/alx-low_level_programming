@@ -3,7 +3,6 @@
 /**
  * _isalpha - Checks for alphabetic character
  * @c: The character to be checked
- * Description: function that checks alphabetic character
  * Return: 1 for alphabetic character or 0 for anything else
  */
 int _isalpha(int c)
