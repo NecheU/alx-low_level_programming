@@ -1,23 +1,16 @@
 #include "main.h"
 
 /**
- * main - Check the code.
- *
- * Return: Always 0.
+ * _isalpha - Checks for alphabetic character
+ * @c: The character to be checked
+ * Description: function that checks alphabetic character
+ * Return: 1 for alphabetic character or 0 for anything else
  */
-
-int main(void)
+int _isalpha(int c)
 {
-	int r;
-
-	r = _isalpha('H');
-	_putchar(r + '0');
-	r = _isalpha('0');
-	_putchar(r + '0');
-	r = _isalpha(108);
-	_putchar(r + '0');
-	r = _isalpha(';');
-	_putchar(r + '0');
-	_putchar('\n');
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	{
+	return (1);
+	}
 	return (0);
 }
