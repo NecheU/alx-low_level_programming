@@ -6,7 +6,7 @@
  * Return: String capitalized
  */
 
-char *cap_string(char *n)
+char *cap_string(char *entry)
 {
 	int con, index, count;
 
