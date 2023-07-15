@@ -8,13 +8,13 @@ int main(void)
 {
 	char let;
 
-	let = 'a';
-	while (let <= 'z')
+	for (let = 'a'; let <= 'z'; let++)
 	{
 		if (let != 'e' && let != 'q')
+		{
 			putchar(let);
+		}
 	}
-	let++;
 	putchar('\n');
 	return (0);
 }
