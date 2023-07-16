@@ -17,9 +17,9 @@ int main(void)
 			putchar((v % 10) + '0');
 			if (u == '8' && v == '9')
 				continue;
+			putchar(',');
+			putchar(' ');
 		}
-		putchar(',');
-		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
