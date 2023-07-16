@@ -2,7 +2,7 @@
 /**
  * main - program that prints combination of aingle numbers
  *
- * Retuen: 0
+ * Return: 0
  */
 int main(void)
 {
