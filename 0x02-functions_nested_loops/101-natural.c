@@ -10,9 +10,9 @@ int main(void)
 
 	for (g = 0; g < 1024; g++)
 	{
-		if ((g % 3) == 0 && (g % 5) == 0)
+		if ((g % 3) == 0 || (g % 5) == 0)
 			sum += g;
+	}
 		printf("%d\n", g);
 		return (0);
-	}
 }
