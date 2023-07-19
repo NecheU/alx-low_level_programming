@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * main - C program to print alphabets
+ * prints_alphabets - function tha prints alphabets
+ * in lowcase
  *
  * Return: nothing
  */
@@ -8,7 +9,7 @@ void print_alphabet(void)
 {
 	int alph;
 
-	for (alph = 'a'; alph < 'z'; alph++)
+	for (alph = 'a'; alph <= 'z'; alph++)
 	{
 		_putchar(alph);
 	}
