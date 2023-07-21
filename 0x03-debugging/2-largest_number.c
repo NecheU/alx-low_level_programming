@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - checks for the largest of numbers
+ * largest_number - checks for the largest of numbers
  * @a: first intiger
  * @b: second integer
  * @c: third integer
