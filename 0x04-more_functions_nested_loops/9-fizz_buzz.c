@@ -1,28 +1,32 @@
 #include <stdio.h>
 /**
  * main - program that prints either number or fizz
- * or buzz or fizzBuzz
+ * or buzz or FizzBuzz
  *
  * Return: 0
  */
 int main(void)
 {
-	int z;
+	int num;
 
-	while (z++ < 100)
+	while (num++ < 100)
 
-		if ((z % 3) == 0 && (z % 5 == 0))
-			printf("FizzBuzz");
+		if ((num % 3 == 0) && (num % 5 == 0))
+			printf("FizzBuzz ");
 
-		else if ((z % 3) == 0)
+		else if ((num % 3) == 0)
+			printf("Fizz ");
+
+		else if ((num % 5) == 0)
 		{
-			if (z != 100)
+			if (num != 100)
 				printf("Buzz ");
+
 			else
 				printf("Buzz");
 		}
 		else
-			printf("%d ", z);
+			printf("%d ", num);
 
 	printf("\n");
 	return (0);
