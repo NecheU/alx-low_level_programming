@@ -7,13 +7,13 @@
  */
 void print_square(int size)
 {
-	int a, b;
+	int inc1, inc2;
 
 	if (size < 0)
 	{
-	for (a = 0; a < size; a++)
+	for (inc1 = 0; inc1 < size; inc1++)
 	{
-	for (b = 0; b < (size - 1); b++)
+	for (inc2 = 0; inc2 < (size - 1); inc2++)
 	_putchar('#');
 
 	_putchar('#');
