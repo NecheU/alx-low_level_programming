@@ -3,13 +3,13 @@
  * print_square - prints squares
  * @size: parameter
  *
- * Return: mothing
+ * Return: nothing
  */
 void print_square(int size)
 {
 	int inc1, inc2;
 
-	if (size < 0)
+	if (size > 0)
 	{
 	for (inc1 = 0; inc1 < size; inc1++)
 	{
