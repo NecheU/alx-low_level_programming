@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts - function that prints a sting
- * str: string
+ * @str: string
  *
  * Return: nothing
  */
