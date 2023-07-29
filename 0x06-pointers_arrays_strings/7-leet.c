@@ -17,7 +17,6 @@ char *leet(char *m)
 		{
 			if (m[y] == t[j])
 				m[y] = v[j];
-			break;
 		}
 	}
 	return (m);
