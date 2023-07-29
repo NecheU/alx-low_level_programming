@@ -8,8 +8,8 @@
 char *rot13(char *r)
 {
 	int e, f;
-	char *k = "abcdefghijklmnopqrdtuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char *l = "nopqrstuvwxyzabcdeqghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *k = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char *l = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM;
 
 	for (e = 0; r[e] != '\0'; e++)
 	{
