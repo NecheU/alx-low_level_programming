@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _memcpy - copies memory area
- * @dest: destination tk copied to
+ * @dest: destination to be copied to
  * @src: where to be copied from
  * @n: number of bytes copied
  * Return: pointer to the copied location
