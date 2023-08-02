@@ -1,7 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 #include <unistd.h>
 
+int is_prime(int n, int start);
+int find_strlen(char *s);
+int check_palindrome(char *s, int len, int index);
 int _sqrt(int n, int x);
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
