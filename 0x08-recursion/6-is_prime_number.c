@@ -20,11 +20,11 @@ int is_prime_number(int n)
  * @first: parameter
  * Return: 1 if n is prime, 0 if otherwise
  */
-int is_prime_number(int n, int first)
+int is_prime(int n, int first)
 {
 	if (n <= 1)
 		return (1);
 	else if (n % first == 0)
 		return (0);
-	return (_is_prime(n, first - 1));
+	return (is_prime(n, first - 1));
 }
