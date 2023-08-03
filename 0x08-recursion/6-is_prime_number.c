@@ -8,23 +8,23 @@
  */
 int is_prime_number(int n)
 {
-	int first = n / 2;
+	int start = n / 2;
 
 	if (n <= 1)
 		return (0);
-	return (is_prime(n, first));
+	return (is_prime(n, start));
 }
 /**
- * is_prime_number - Fuction that returns 1 if a number is prime
+ * is_prime- Fuction that returns 1 if a number is prime
  * @n: the number to be checkd
- * @first: parameter
+ *
  * Return: 1 if n is prime, 0 if otherwise
  */
-int is_prime(int n, int first)
+int is_prime(int n, int start)
 {
 	if (n <= 1)
 		return (1);
-	else if (n % first == 0)
+	else if (n % start == 0)
 		return (0);
-	return (is_prime(n, first - 1));
+	return (is_prime(n, start - 1));
 }
