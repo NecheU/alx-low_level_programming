@@ -1,0 +1,1 @@
+C_static_library
