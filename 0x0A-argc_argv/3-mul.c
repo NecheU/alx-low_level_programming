@@ -9,13 +9,13 @@
  */
 int main(int argc, char *argv[])
 {
+	int e, f, result;
+
 	if (argc <= 2)
 	{
 	printf("Eeror\n");
 	return (1);
 	}
-	int e, f, result;
-
 	e = atoi(argv[1]);
 	f = atoi(argv[2]);
 	result = e * f;
