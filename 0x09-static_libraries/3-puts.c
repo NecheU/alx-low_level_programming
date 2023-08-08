@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * _puts - function that prints a sting
  * @str: string
