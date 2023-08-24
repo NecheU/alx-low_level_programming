@@ -4,7 +4,7 @@
  * free_list - a fuction thst frees a list
  *
  * @head: pointer to the ludt head
- *
+ * Return: nothing
  */
 
 void free_list(list_t *head)
