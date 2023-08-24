@@ -9,13 +9,21 @@
 
 void free_list(list_t *head)
 {
-	list_t tmp;
+	list_t *main_node;
+	list_t *next_node;
 
-	while (head)
+	if (head)
 	{
-		tmp = head->next;
-		free(head->str);
-		free(head);
-		head = tmp;
+		main_node = head;
+		next_node = head->next;
+		while (next_node)
+		{
+			free(main_node->str);
+			free(main_node);
+			main_node = next_node;
+			main_node = next_node->next;
+		}
+		free(main_node->str);
+		free(main_node);
 	}
 }
