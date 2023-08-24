@@ -15,15 +15,13 @@ void free_list(list_t *head)
 	if (head)
 	{
 		main_node = head;
-		next_node = head->next;
 		while (main_node)
 		{
+			next_node = main_node->next;
 			free(main_node->str);
 			free(main_node);
-			main_node = next_node;
-			next_node = next_node->next;
+			next_node = next_node;
 		}
-		free(main_node->str);
-		free(main_node);
+		
 	}
 }
