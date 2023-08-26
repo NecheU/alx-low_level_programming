@@ -7,7 +7,12 @@
  */
 int main(void)
 {
-	unsigned long a = 0; b = 1; c = 0; sum = 0;
+	unsigned long a, b, c, sum;
+
+a = 0;
+b = 1;
+c = 0;
+sum = 0;
 
 	while (c <= 4000000)
 	{
