@@ -23,7 +23,7 @@ int main(void)
 	b_x1 = b / 10000000000;
 	a_x2 = a % 10000000000;
 	b_x2 = b % 10000000000;
-	for (fib = 93; fib < 99; fib++)
+	for (fib = 92; fib < 99; fib++)
 	{
 		x1 = a_x1 + b_x1;
 		x2 = a_x2 + b_x2;
