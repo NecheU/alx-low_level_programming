@@ -18,7 +18,7 @@ for (first_digi = 0; first_digi <= n; first_digi++)
 {
 _putchar('0');
 
-for (second_digi = 0; second_digi <= n; second_digi++)
+for (second_digi = 1; second_digi <= n; second_digi++)
 {
 _putchar(',');
 _putchar(' ');
