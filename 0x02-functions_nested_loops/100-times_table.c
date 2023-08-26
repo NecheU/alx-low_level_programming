@@ -12,7 +12,7 @@ void print_times_table(int n)
 {
 int first_digi, second_digi, result;
 
-if (n <= 20 && n >= 0)
+if (n <= 15 && n >= 0)
 {
 for (first_digi = 0; first_digi <= n; first_digi++)
 {
