@@ -1,1 +1,0 @@
-C_structures_typedef
