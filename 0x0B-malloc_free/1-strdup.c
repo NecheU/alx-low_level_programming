@@ -6,7 +6,7 @@
  * parameter
  * @str: the string tk be copied
  *
- * Return: pointer to allocated space or NULL if error
+ * Return: pointer to allocated space or NULL if error occurs
  */
 
 char *_strdup(char *str)
