@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * free_grid - C funtion that two dimentional array
  * @grid: memory blivk to be freed
