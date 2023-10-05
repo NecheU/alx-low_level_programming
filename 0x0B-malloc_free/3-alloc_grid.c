@@ -21,7 +21,7 @@ if (vect != NULL)
 {
 for (; b < height; b++)
 {
-vect[b] = (int *) malloc(sizeof(int) * width);
+vect[b] = malloc(sizeof(int) * width);
 if (vect[b] != NULL)
 {
 for (c = 0; c < width; c++)
