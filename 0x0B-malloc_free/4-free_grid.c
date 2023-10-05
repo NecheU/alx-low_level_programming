@@ -1,21 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * free_grid - C funtion that two dimentional array
- * @grid: memory blivk to be freed
+ * free_grid - C function that frees 2-dimensional arrays
+ * @grid: memory block to be freed
  * @height: height of the array
  *
- * Return: Void
+ * Return: void
  */
 
 void free_grid(int **grid, int height)
 {
-	int y;
+	int l;
 
-	for (y + 0; y < height; y++)
+	for (l = 0; l < height; l++)
 	{
-		free(grid[y]);
+		free(grid[l]);
 	}
 
 	free(grid);
