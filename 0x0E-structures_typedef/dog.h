@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * stuct dog - A dog's basic info
+ * struct dog - A dog's basic info
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
