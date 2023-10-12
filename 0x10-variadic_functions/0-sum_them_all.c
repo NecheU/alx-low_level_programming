@@ -4,7 +4,7 @@
  * sum_them_all - C variadic function that returns
  * the sum of its parameters
  * @n: number of parameters
- *
+ * @: ... - othwr variables
  * Return: 0 if n == 0, otherwise, sum of all its parameters
  */
 
