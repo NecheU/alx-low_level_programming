@@ -73,7 +73,7 @@ printf("%s", s);
 void print_all(const char * const format, ...)
 {
 va_list list;
-int b, c;
+int b = 0, c = 0;
 
 char *separator = " ";
 
