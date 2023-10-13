@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
 * get_op_func - It gets the correct functions to
@@ -9,7 +9,7 @@
 * Return: a pointer to the dunction corresponding
 * to the operator given as argument
 */
-int (*get_op_func(char *s)) (int, int)
+int (*get_op_func(char *s))(int, int)
 {
 op_t ops[] = {
 {"+", op_add},
@@ -20,10 +20,10 @@ op_t ops[] = {
 {NULL, NULL},
 };
 
-int a;
+int i;
 
-while (ops[a].op != NULL && *(ops[a].op) != *s)
-a++;
+while (ops[i].op != NULL && *(ops[i].op) != *s)
+i++;
 
-return (ops[a].f);
+return (ops[i].f);
 }
