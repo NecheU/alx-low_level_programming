@@ -5,7 +5,14 @@
 #include <stdio.h>
 #include <stdio.h>
 
-typedef struct printer{
+
+/**
+ * struct printer - primter
+ * @symbol: data type
+ * @print: pointer
+ */
+typedef struct printer
+{
 	char *symbol;
 	void (*print)(va_list arg);
 } printer_t;
