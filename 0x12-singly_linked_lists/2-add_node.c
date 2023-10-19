@@ -10,9 +10,9 @@ int _strlen_recursion(char *s);
  *
  * Return: NULL if failure or address to the new element
  */
- list_t *add_node(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
-	list_t added;
+	list_t *added;
 
 	added = malloc(sizeof(list_t));
 	if (added == NULL)
@@ -40,10 +40,10 @@ int _strlen_recursion(char *s);
  *
  * Return: lengrh of s
  */
-int _str_len_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	if (*s == 0)
 		return (0);
 	else
-		return (1 + _str_len_recursion(s + 1));
+		return (1 + _strlen_recursion(s + 1));
 }
