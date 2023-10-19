@@ -1,4 +1,4 @@
-#include "lists.n"
+#include "lists.h"
 
 /**
  * first - function to print an output before
