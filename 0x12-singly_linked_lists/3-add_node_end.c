@@ -28,7 +28,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 
 	added->len = _strlen_recursion(added->str);
-	added-> = NULL;
+	added->next = NULL;
 
 	if (d)
 	{
