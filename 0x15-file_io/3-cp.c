@@ -1,7 +1,9 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 char *create_buffer(char *file);
-void close_file(int fd);
+void close_file(int fd, char *buffer);
 
 /**
  * create_buffer - It allocate 1024 bytes fora buffer
@@ -29,7 +31,7 @@ char *create_buffer(char *file)
  * close_file - It closes the dile descriptor
  * @fd: the file descriptor to be closed
  */
-void close_file(int fd)
+void close_file(int fd, char *buffer)
 {
 	int k;
 
@@ -38,6 +40,7 @@ void close_file(int fd)
 	if (k == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		free(buffer);
 		exit(100);
 	}
 }
