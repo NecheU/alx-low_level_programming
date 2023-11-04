@@ -29,7 +29,7 @@ char *create_buffer(char *file)
  * close_file - It closes the dile descriptor
  * @fd: the file descriptor to be closed
  */
-void close_file(int fd)
+void close_file(int fd *buffer)
 {
 	int k;
 
@@ -38,6 +38,7 @@ void close_file(int fd)
 	if (k == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		free(buffer);
 		exit(100);
 	}
 }
