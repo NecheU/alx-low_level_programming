@@ -1,1 +1,1 @@
-C_doubly_linked_list
+C_Doubly_Linked_List
