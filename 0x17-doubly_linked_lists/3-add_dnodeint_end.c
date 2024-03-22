@@ -3,10 +3,10 @@
 /**
  * add_dnodeint_end - C function that adds a new node at
  * the end of dlistint_t list
- * @h: pointer to the head of the list
+ * @head: pointer to the head of the list
  * @n: new node to be added
  *
- * Return: last node
+ * Return: address of the added node ir NULL if failure
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
