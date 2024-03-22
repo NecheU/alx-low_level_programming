@@ -2,18 +2,18 @@
 
 /**
  * add_dnodeint - Function to add node at the begining of dlitsint_t list
- * @head: pounter to the head of the list
- * @n: new node/imt to be added
+ * @head: pointer to the head of the list
+ * @n: new node/int to be added
  *
  * Return: new node
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *new_no;
+	dlistint_t *new_n;
 
 
 	new_n = malloc(sizeof(dlistint_t));
-	if (new_no == NULL)
+	if (new_n == NULL)
 	{
 		return (NULL);
 	}
